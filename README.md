@@ -1,1 +1,2 @@
-# This repo has full course about javascript!
+# JavaScript course!
+### SabaiCode Bootcamp V
