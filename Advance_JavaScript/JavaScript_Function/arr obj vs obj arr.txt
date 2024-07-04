@@ -1,0 +1,35 @@
+arr obj vs obj arr
+=========================================
+Array Object
+const persons = [
+    { 
+        name: 'John', 
+        age: 30, 
+        city: 'New York'
+    },{ 
+        name: 'Jane', 
+        age: 25, 
+        city: 'Los Angeles'
+    },
+    { 
+        name: 'Doe', 
+        age: 40, 
+        city: 'Chicago' 
+    }
+];
+=> How to access element in Array
+console.log(persons[0].name);
+....
+....
+
+=========================================
+Object of Array
+const studentGrades = {
+    Alice: [85, 90, 88],
+    Bob: [78, 82, 80],
+    Charlie: [92, 88, 94]
+};
+=> How to access item specific arr name
+console.log(studentGrades['Alice']);
+....
+....
