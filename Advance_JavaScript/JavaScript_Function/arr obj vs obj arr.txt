@@ -1,3 +1,7 @@
+when we call function, we `call=invoke`
+function none input and output, we call void function
+
+
 arr obj vs obj arr
 =========================================
 Array Object
