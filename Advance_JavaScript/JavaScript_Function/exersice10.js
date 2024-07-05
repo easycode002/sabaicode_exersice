@@ -1,18 +1,9 @@
-function factorial(number) {
-    if (number < 0) {
-      return NaN;
-    }
-    if (number === 0 || number === 1) {
-      return 1;
-    }
-  
-    let result = 1;
-    for (let i = 2; i <= number; i++) {
-      result *= i;
-    }
-    return result;
+function factorial(n){
+  let result = 1;
+  for (let i = i; i<=n;i++){
+    result *= i;
   }
-  console.log(factorial(5)); // Output is : 120 , (5! = 5 * 4 * 3 * 2 * 1 = 120)
-  console.log(factorial(0)); // Output is : 1 , (0! = 1)
-  console.log(factorial(1));
-  console.log(factorial(10));
+  return result;
+}
+
+console.log(factorial(200));
