@@ -11,3 +11,7 @@ const calculateMedian = function(arr) {
 const numbers = [1, 2, 3, 4,5,23];
 const median = calculateMedian(numbers);
 console.log(`Median of [${numbers}] is: ${median}`); // Output: Median of [1, 2, 3, 4] is: 2.5
+// How to to find medain in array number
+// សេស​ កណ្ដាល = median
+// គូរ លេខកណ្ដាល២ បូកចូលគ្នា ចែក២
+
