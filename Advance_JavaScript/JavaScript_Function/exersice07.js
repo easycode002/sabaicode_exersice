@@ -35,3 +35,6 @@ const countVowel = function(string) {
 const inputString = "SabaiCode";
 console.log(`Number of vowels in "${inputString}": ${countVowel(inputString)}`);
 console.log(allVowel)
+
+// of use with array
+// in use with obj

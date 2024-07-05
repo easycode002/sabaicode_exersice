@@ -35,15 +35,15 @@
 
 
 // #Way 002=========================================================
-const filterProduct = (product) =>{
-    let AfterFilter = []
-    for (let i=0; i<product.length;i++){
-        if (product[i].quantiy>0){
-            AfterFilter.push(product[i].name)
-        }
-    }
-    return AfterFilter;
-}
+// const filterProduct = (product) =>{
+//     let AfterFilter = []
+//     for (let i=0; i<product.length;i++){
+//         if (product[i].quantiy>0){
+//             AfterFilter.push(product[i].name)
+//         }
+//     }
+//     return AfterFilter;
+// }
 const arrProducts = [
     {
         name:"iPhone 21 Pro Max",
@@ -67,13 +67,19 @@ const arrProducts = [
     }
 ];
 
-// return arr of obj
-let productNamesWithQuantity = [];
-const productAfterFilter = filterProduct(arrProducts);
-// console.log('The product after filter is : ',productAfterFilter)
+// // return arr of obj
+// let productNamesWithQuantity = [];
+// const productAfterFilter = filterProduct(arrProducts);
+// // console.log('The product after filter is : ',productAfterFilter)
 
-// if u want to return the product with specific key in obj
-productAfterFilter.forEach(name => {
-    productNamesWithQuantity.push(name);
-});
-console.log('Product names with quantity > 0:', productNamesWithQuantity);
+// // if u want to return the product with specific key in obj
+// productAfterFilter.forEach(name => {
+//     productNamesWithQuantity.push(name);
+// });
+// console.log('Product names with quantity > 0:', productNamesWithQuantity);
+
+
+// #Way 003=========================================================
+const filterProduct2 = arrProducts.filter(item=>item.quantiy>0)
+console.log(filterProduct2);
+
