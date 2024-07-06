@@ -1,0 +1,1 @@
+Callback function :ជាវិធីសាស្ដ្រមួយក្នងjavascript ដែលអនុញ្ញាអោយយើងបោះfunction ចូលទៅក្នុងfunction.
