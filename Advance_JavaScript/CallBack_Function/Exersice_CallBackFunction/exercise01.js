@@ -13,18 +13,15 @@ function callBackFunction (arrNumber,getCallBack){
     // return data
     return result
 }
-
 // arrNumber 
 const numbers = [1,2,3,4,5,6,7];
-
 // define callback function
 const sqCallBack = function(num){
     return num * num
 }
-
-
 // invoke callBackFunction with the number of array with squarecallBack
 const sqNumber = callBackFunction(numbers,sqCallBack)
 
 
-console.log(`${sqNumber}`);
+// console.log(`${sqNumber}`);
+console.log(sqNumber);

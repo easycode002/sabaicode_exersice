@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fetch API Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center">
+    <h1>Fetch API Example</h1>
+    <input type="number" id="userId" placeholder="Enter user ID" class="px-24 py-4 items-start justify-center"/>
+    <button id="fetchButton" class="bg-red-200 px-12 py-4 rounded-md text-xl font-bold">Fetch Data</button>
+    <pre id="output"></pre>
+
+    <script>
+        document.getElementById('fetchButton').addEventListener('click', () => {
+            const userId = document.getElementById('userId').value;
+            if (!userId) {
+                document.getElementById('output').textContent = 'Please enter a user ID.';
+                return;
+            }
+
+            fetch(`https://jsonplaceholder.typicode.com/users/${userId}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    document.getElementById('output').textContent = JSON.stringify(data, null, 2);
+                    console.log(data); // Handle the data from the API
+                })
+                .catch(error => {
+                    document.getElementById('output').textContent = 'Error: ' + error.message;
+                    console.error('Error:', error); // Handle any errors
+                });
+        });
+    </script>
+</body>
+</html>

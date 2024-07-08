@@ -19,7 +19,6 @@ let totalSr = 0;
 let totalAv = 0;
 let gd = "No grade!"
 
-
 // call function and assign the argument to parameter
 let grade = findGrade(20,30,200,
     // style anonymous function
