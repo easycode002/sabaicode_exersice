@@ -14,3 +14,7 @@ function writeFileAsync(getFilePath,getCallBack){
     });
 }
 writeFileAsync('exersice04.txt',()=>('How are U?'))
+
+exports.module = writeFileAsync();
+
+module.exports  =writeFileAsync
