@@ -1,9 +1,9 @@
 function dateFormat(getDatesting){
     const tranformDate = getDatesting.map(date=>{
-        let parts = date.split('-')
+        let parts = date.split('-') // split use to convert date(string) to array string
+        console.log(parts);
         return `${parts[2]}/${parts[1]}/${parts[0]}`
     })
-
     return tranformDate
 }
 
