@@ -1,6 +1,7 @@
 const readFile = require("./read-write-File/exersice03");
 const writeFile = require("./read-write-File/exersice04");
 
+// readFile and writeFile is promise that return to new promise in promise chian.
 
 readFile('./input.txt')
     .then(data => {
